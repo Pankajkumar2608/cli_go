@@ -49,6 +49,16 @@ func getCommand () map[string]cliCommand {
 			description: "Prints the help menu",
 			callback: callbackHelp ,
 		},
+		"frontpage": {
+			name: "frontpage",
+			description: "Print First pages news",
+			callback: callbackMap,
+		},
+		"bycomment": {
+			name: "bycomments",
+			description: "Print top news by comments",
+			callback: callbackByComment,
+		},
 		"exit": {
 			name: "exit",
 			description:"Exit the program",
